@@ -1,0 +1,47 @@
+<div class="text-center mt-4">
+    <h1 class="h11">Customer Profile</h1>
+
+<mat-card class="profilem">
+
+    <mat-card-content>
+        <div >
+            <div class="text-center">
+                <img img-fluid class="profile-pic"
+                    src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="">
+
+                <h1 class="">{{user.firstName}} {{user.lastName}}</h1>
+            </div>
+
+                  <table class="table mt-3">
+                    <tr>
+                        <td>Username</td>
+                        <td>{{user.username}}</td>
+                    </tr>
+                    <tr>
+                        <td>Userid</td>
+                        <td>{{user.id}}</td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td>{{user.phone}}</td>
+                    </tr>
+                    <tr>
+                        <td>Role</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Status</td>
+                        <td></td>
+                    </tr>
+                  </table>
+                </div>
+
+
+    </mat-card-content>
+    <mat-card-actions class="text-center">
+        <button mat-raised-button color="primary">UPDATE</button>
+        <button mat-raised-button color="accent">SHARE</button>
+    </mat-card-actions>
+
+</mat-card>
+</div>

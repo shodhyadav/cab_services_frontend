@@ -1,0 +1,8 @@
+.dd{
+    background-color: LightGray;
+}
+.user{
+    background-image: url('../../../assets/pic.jpg');
+    height: 86%;
+    width: 100%;
+}

@@ -1,0 +1,21 @@
+.h11{
+    font-size: 300%;
+    font-weight: bolder;
+    color: brown;
+}
+
+.rec{
+    display: inline-block;
+}
+
+.rec a{
+    text-decoration: none;
+    color: brown;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+}
+.rec a:hover {
+    color: #8EC44A;
+  }

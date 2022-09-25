@@ -1,0 +1,9 @@
+.table{
+    width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+}
+.table tr td{
+    border: .5px solid #e2e2e2;
+    padding:10px
+}

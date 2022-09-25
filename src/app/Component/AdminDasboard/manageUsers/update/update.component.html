@@ -1,0 +1,51 @@
+<div class="container-fluid  cc">
+    <div class="row">
+        <div class="col-md-6 text-center offset-md-3 ">
+            <mat-card class="mt-5">
+            <div class="container text-center">
+            </div>
+            <h1 class="reg">Enter Updated Detail</h1>
+            <form (ngSubmit)="onSubmit()">
+
+                <mat-form-field appearance="fill">
+                    <mat-label>User Name</mat-label>
+                    <input [(ngModel)]="user.username" name="username" matInput required />
+                </mat-form-field>
+
+                <mat-form-field class="mx-2" appearance="fill">
+                    <mat-label>User Password</mat-label>
+                    <input [(ngModel)]="user.password" type ="password"name="password" matInput required />
+                </mat-form-field>
+
+                <mat-form-field  appearance="fill">
+                    <mat-label>First Name</mat-label>
+                    <input [(ngModel)]="user.firstName" name="firstName" type="text" matInput required />
+                </mat-form-field>
+
+                <mat-form-field class="mx-2" appearance="fill">
+                    <mat-label>Last Name</mat-label>
+                    <input [(ngModel)]="user.lastName" name="lastName" type="text" matInput />
+                </mat-form-field>
+
+                <mat-form-field  appearance="fill">
+                    <mat-label>Email Address</mat-label>
+                    <input [(ngModel)]="user.email" name="email" type="email" matInput required />
+                </mat-form-field>
+
+                <mat-form-field  appearance="fill">
+                    <mat-label>Mobile No</mat-label>
+                    <input [(ngModel)]="user.phone" name="phone" type="number" matInput />
+                </mat-form-field>
+                <div>
+
+                    <button type="submit" mat-raised-button color="primary">Update</button>
+                    <button [routerLink]="'/admin/manageUsers'" type="reset" mat-raised-button color="warn" class="mx-2">Back</button>
+
+                </div>
+
+            </form>
+            </mat-card>
+        </div>
+    </div>
+</div>
+

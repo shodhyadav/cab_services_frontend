@@ -1,0 +1,25 @@
+<div class="row mt-3 aa">
+    <div class="col-md-2"></div>
+    <div class="col-md-1">
+       <a [routerLink]="'faq'">Home</a>
+    </div>
+    <div class="col-md-1">
+        <a [routerLink]="'/admin/manageUsers'">Manage Users</a>
+    </div>
+    <div class="col-md-2 text-center">
+        <a [routerLink]="'/admin/managebooking'">Manage Booking</a>
+    </div>
+    <div class="col-md-1">
+        <a [routerLink]="'/admin/members'">Members</a>
+    </div>
+    <div class="col-md-1">
+        <a [routerLink]="'/admin/viewfeedback'">View Feedback</a>
+    </div>
+    <div class="col-md-2 text-center">
+        <a [routerLink]="'/admin/changepassword'">Change Password</a>
+    </div>
+    <div class="col-md-1">
+        <a (click)="logout()">LogOut</a>
+    </div>
+    <div class="col-md-1"></div>
+</div>

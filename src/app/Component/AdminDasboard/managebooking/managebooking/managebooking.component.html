@@ -1,0 +1,67 @@
+<mat-card class="mt-5">
+    <div class="text-center mt-2">
+        <h1 class="h11 mt-2">Manage Booking Status</h1>
+    </div>
+
+    <div class="row text-center  mt-4">
+
+        <div class="col-md-1">
+            <h1 class="ddd">Id</h1>
+        </div>
+        <div class="col-md-1">
+            <h1 class="ddd">UserId</h1>
+        </div>
+        <div class="col-md-2">
+            <h1 class="ddd">Pickup_Location</h1>
+        </div>
+        <div class="col-md-2">
+            <h1 class="ddd">Dropof_Location</h1>
+        </div>
+
+        <div class="col-md-1">
+            <h1 class="ddd">Date</h1>
+        </div>
+        <div class="col-md-2">
+            <h1 class="ddd">Time</h1>
+        </div>
+        <div class="col-md-1">
+            <h1 class="ddd">Cancel /</h1>
+        </div>
+        <div class="col-md-2">
+            <h1 class="ddd">Complete Booking</h1>
+        </div>
+    </div>
+
+    <div *ngFor="let c of this.bookings" class="row text-center mt-2">
+
+        <div class="col-md-1">
+            <p>{{c.id}}</p>
+        </div>
+        <div class="col-md-1">
+            <p>{{c.userId}}</p>
+        </div>
+        <div class="col-md-2">
+            <p>{{c.pickup_location}}</p>
+        </div>
+        <div class="col-md-2">
+            <p>{{c.dropof_location}}</p>
+        </div>
+
+        <div class="col-md-1">
+            <p>{{c.date}}/{{c.month}}/{{c.year}}</p>
+        </div>
+        <div class="col-md-2">
+            <p>{{c.hour}}:{{c.min}}:{{c.period}}</p>
+        </div>
+        <div class="col-md-1">
+            <a [routerLink]="'/admin/cancel/'+c.id">
+                <mat-icon fontIcon="close"></mat-icon>
+            </a>
+        </div>
+        <div class="col-md-1">
+            <a [routerLink]="'/admin/complete/'+c.id">
+                <mat-icon fontIcon="done"></mat-icon>
+            </a>
+        </div>
+    </div>
+</mat-card>

@@ -1,0 +1,85 @@
+<div class="text-center mt-4">
+  <h1 class="h11">Book a City Taxi to your destination</h1>
+  <h4 class="h11">Ride anywhere any time</h4>
+  <mat-card>
+    <form class="mt-2" (ngSubmit)="onSubmit()">
+      <mat-form-field appearance="fill">
+        <mat-label>Pick Up Location</mat-label>
+        <mat-select [(ngModel)]="this.book.pickup_location" name="pickup_location">
+          <mat-option *ngFor="let c of location" [value]="c.start_Point">{{c.start_Point}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field class="mx-5" appearance="fill">
+        <mat-label>Drop Of Location</mat-label>
+        <mat-select [(ngModel)]="this.book.dropof_location" name="dropof_location">
+          <mat-option *ngFor="let c of location" [value]="c.end_Point">{{c.end_Point}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field class="mx-5" appearance="fill">
+        <mat-label>Select Cab</mat-label>
+        <mat-select [(ngModel)]="this.cab.cab_Id" name="cabId" [(value)] ="book.cabId">
+          <div *ngFor="let c of cabs">
+            <mat-option *ngIf="c.available" [value]="c.cab_Id">{{c.vehicle}}</mat-option>
+          </div>
+        </mat-select>
+      </mat-form-field>
+
+
+      <div></div>
+
+
+      <mat-form-field class=" date" appearance="fill">
+        <mat-label style="background-color:yellow;"><span style="color: brown;font-weight:bolder">Date</span>
+        </mat-label>
+        <input matInput disabled="">
+      </mat-form-field>
+      <mat-form-field class=" dmy" appearance="fill">
+        <mat-label>dd</mat-label>
+        <input matInput [(ngModel)]="this.book.date" name="date" type="number">
+      </mat-form-field>
+      <mat-form-field class="mm" appearance="fill">
+        <mat-label>mm</mat-label>
+        <input matInput type="number" [(ngModel)]="this.book.month" name="month">
+      </mat-form-field>
+      <mat-form-field class="yyyy" appearance="fill">
+        <mat-label>yyyy</mat-label>
+        <input matInput type="number" [(ngModel)]="this.book.year" name="year">
+      </mat-form-field>
+
+      <mat-form-field class=" time" appearance="fill">
+        <mat-label style="background-color:yellow;"><span style="color: brown;font-weight:bolder">Time</span>
+        </mat-label>
+        <input matInput disabled="">
+      </mat-form-field>
+
+      <mat-form-field class="dmy" appearance="fill">
+        <mat-label>hh</mat-label>
+        <input matInput type="number" [(ngModel)]="this.book.hour" name="hour">
+      </mat-form-field>
+      <mat-form-field class="mm" appearance="fill">
+        <mat-label>mm</mat-label>
+        <input matInput type="number" [(ngModel)]="this.book.min" name="min">
+      </mat-form-field>
+      <mat-form-field class="yyyy" appearance="fill">
+        <mat-label></mat-label>
+        <mat-select [(ngModel)]="this.book.period" name="period">
+          <mat-option value="AM">AM</mat-option>
+          <mat-option value="PM">PM</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <div></div>
+
+      <mat-form-field class="mt-2" appearance="fill">
+        <mat-label>Leave a comment</mat-label>
+        <input matInput type="username">
+      </mat-form-field>
+
+      <div>
+        <button mat-raised-button color="primary" class="mt-2" type="submit">Book Now</button>
+      </div>
+    </form>
+  </mat-card>
+</div>

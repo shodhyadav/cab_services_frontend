@@ -1,0 +1,18 @@
+.container{
+    width: 40%;
+}
+.hh{
+    font-size: 80%;
+    font-weight: bolder;
+}
+.hh .an{
+    text-decoration: none;
+}
+.cc{
+    background-image: url('../../assets/pic.jpg');
+    height: 86%;
+}
+.login{
+    color: #aa1909;
+    font-weight: bolder;
+}

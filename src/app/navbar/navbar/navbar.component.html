@@ -1,0 +1,54 @@
+
+<header class="ola-header sticky">   <!--header-->
+    <div class="primary-header hide-xs">
+        <div class="max-width">
+            <div class="pull-left">
+
+            </div>
+            <div class="pull-right mx-5">
+                <div class="primary-links">
+                    <div class="link-wrapper">
+                        <a href="" >Drive with Us</a>
+                    </div>
+                    <div class="link-wrapper">
+                        <a href="">Wallet</a>
+                    </div>
+                    <div class="link-wrapper">
+                        <a href="">Corporate</a>
+                    </div>
+                    <div class="link-wrapper">
+                        <a href="/share">Share</a>
+                    </div>
+                    <div class="link-wrapper">
+                        <a href="">Offers</a>
+                    </div>
+                    <div class="link-wrapper">
+                        <a href="">Support</a>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div class="secondary-header">
+        <div class="max-width">
+            <div class="pull-left">
+                <a href="" class="show-xs menu-icon cabs">
+                    Cabs
+                </a>
+            </div>
+            <div class="pull-right">
+                <div class="secondary-links hide-xs">
+                    <a [routerLink]="'/home'">Home</a>
+                    <a  *ngIf="!isLoggedIn" [routerLink]="'faq'">FAQ</a>
+                    <a  *ngIf="!isLoggedIn" [routerLink]="'/contact'">Contact</a>
+                    <a  *ngIf="!isLoggedIn" [routerLink]="'/feature'">Features</a>
+                    <a  *ngIf="isLoggedIn " >{{ user.username }}</a>
+                    <a  *ngIf="!isLoggedIn" [routerLink]="'/login'" class="login-link event-elem">Login</a>
+                    <a  *ngIf="isLoggedIn" (click)="logout()" class="login-link event-elem">Logout</a>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</header>

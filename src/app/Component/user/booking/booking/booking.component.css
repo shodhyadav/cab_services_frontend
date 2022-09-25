@@ -1,0 +1,25 @@
+.h11{
+    font-weight: bolder;
+}
+
+.dmy{
+    width: 4%;
+}
+.mm{
+    width: 4%;
+}
+.yyyy{
+    width: 4%;
+    margin-right: 4%;
+}
+.date{
+    width: 5%;
+}
+.time{
+    width: 5%;
+}
+input[type=number]::-webkit-inner-spin-button ,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    display: none;
+}

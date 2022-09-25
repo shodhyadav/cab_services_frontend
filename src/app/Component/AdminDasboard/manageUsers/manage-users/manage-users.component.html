@@ -1,0 +1,73 @@
+
+<div class="row mt-5">
+    <div class="col-md-12 mt-5">
+
+        <mat-card>
+            <h1 class="text-center" style="font-weight: bolder;">Users List</h1>
+            
+            <div class="row mt-5" style="color:brown ;font-weight:bolder">
+                <div class="col-md-1 ">
+                    <h1>Id</h1>
+                 </div>
+                <div class="col-md-2 ">
+                   <h1>Username</h1>
+                </div>
+    
+                <div class="col-md-2 ">
+                    <h1>FirstName</h1>
+                </div>
+    
+                <div class="col-md-2 ">
+                    <h1>LastName</h1>
+                </div>
+    
+                <div class="col-md-2">
+                    <h1>Email</h1>
+                </div>
+    
+                <div class="col-md-1 ">
+                    <h1>Phone</h1>
+                </div>
+    
+                <div class="col-md-2">
+                    <h1>Update / Delete</h1>
+                </div>
+               </div>
+
+
+           <div *ngFor="let u of users" class="row">
+
+            <div class="col-md-1">
+                <h4>{{u.id}}</h4>
+             </div>
+
+            <div class="col-md-2">
+               <h4>{{u.username}}</h4>
+            </div>
+
+            <div class="col-md-2 ">
+                <h4>{{u.firstName}}</h4>
+            </div>
+
+            <div class="col-md-2 ">
+                <h4>{{u.lastName}}</h4>
+            </div>
+
+            <div class="col-md-2 ">
+                <h4>{{u.email}}</h4>
+            </div>
+
+            <div class="col-md-1 ">
+                <h4>{{u.phone}}</h4>
+            </div>
+
+    
+            <div class="col-md-2 text-center ">
+                <a [routerLink]="'/admin/update/' + u.id"><mat-icon fontIcon="add_circle"></mat-icon></a>
+                <a><mat-icon fontIcon="process_chart"></mat-icon></a>
+                <a [routerLink]="'/admin/delete/'+u.id"><mat-icon fontIcon="close"></mat-icon></a>
+            </div>
+           </div>
+        </mat-card>
+    </div>
+</div>

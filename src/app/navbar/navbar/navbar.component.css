@@ -1,0 +1,252 @@
+.left {
+    float: left;
+  }
+  
+  .right {
+    float: right;
+  }
+  
+  .text-left {
+    text-align: left;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  .hide {
+    display: none !important;
+  }
+  
+  .overlay-hide {
+    display: none;
+  }
+  .clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+  }
+  
+  .clearfix:after {
+    clear: both;
+  }
+  
+  /*Header */
+  .sticky {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    top: 0;
+    left: 0;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  
+  header {
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  
+  header.ola-header .pull-left {
+    float: left;
+  }
+  
+  header.ola-header .pull-right {
+    float: right;
+  }
+  
+  header.ola-header .logo {
+    width: 120px;
+  }
+  
+  .primary-header {
+    background: #000000;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 6px 20px;
+    font-size: 13px;
+    overflow: hidden;
+  }
+  
+  .primary-header .logo {
+    width: 80px;
+  }
+  
+  .primary-header a {
+    text-decoration: none;
+  }
+  
+  .primary-header .ola-link {
+    color: #CCE600;
+  }
+  
+  .primary-header .primary-links .link-wrapper {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 15px;
+    border-right: 1px solid rgba(255, 255, 255, 0.8);
+  }
+  
+  .primary-header .primary-links .link-wrapper:last-child {
+    border-right: 0;
+    padding-right: 0;
+  }
+  
+  .primary-header .primary-links a {
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 0.2px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+  }
+  
+  .primary-header .primary-links a.active {
+    color: #FFFFFF;
+  }
+  
+  .primary-header .primary-links a:hover {
+    color: #8EC44A;
+  }
+  
+  .primary-header .primary-links a:last-child {
+    padding-right: 0;
+  }
+  
+  .secondary-header {
+    background: #FFFFFF;
+    padding: 10px 20px;
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.14);
+            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.14);
+    overflow: hidden;
+    text-align: right;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    z-index: 100;
+    height: 65px;
+    width: 100%;
+  }
+  
+  .secondary-header a {
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+  
+  .secondary-header a:focus {
+    outline: none;
+  }
+  
+  .secondary-header .menu-icon {
+    padding: 7px 8px;
+    float: left;
+  }
+  
+  .secondary-header .menu-icon:hover, .secondary-header .menu-icon:focus, .secondary-header .menu-icon:active {
+    background: rgba(0, 0, 0, 0.08);
+  }
+  
+  .secondary-header .mb-logo {
+    display: none;
+  }
+  
+  .secondary-header .mb-logo .mb-logo-img {
+    display: none;
+  }
+  
+  .secondary-header .secondary-links a {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.8);
+    display: inline-block;
+    padding: 11px 22px;
+    vertical-align: middle;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .secondary-header .secondary-links a:hover {
+    color: #8EC44A;
+  }
+  
+  .secondary-header .secondary-links .active-page {
+    position: relative;
+    font-weight: 600 !important;
+  }
+  
+  .secondary-header .secondary-links .active-page:hover {
+    color: rgba(0, 0, 0, 0.8);
+    cursor: default;
+  }
+  
+  .secondary-header .secondary-links .active-page:before {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 4px;
+    background: #000000;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+  }
+  
+  .secondary-header .secondary-links .active-line {
+    position: absolute;
+    width: 70px;
+    height: 3px;
+    background: #CCE500;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+  }
+  
+  .secondary-header .secondary-links .login-link {
+    position: relative;
+    font-weight: 400;
+    background: #CCE500;
+    color: rgba(0, 0, 0, 0.8);
+    border-radius: 2px;
+    margin-top: 2px;
+  }
+  
+  .secondary-header .secondary-links .login-link:hover {
+    background: #bdd400;
+    color: black;
+  }
+  
+  .secondary-header .secondary-links .login-link .mid-line {
+    position: absolute;
+    left: 0;
+    height: 20px;
+    background: rgba(155, 155, 155, 0.3);
+    width: 1px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  
+  .secondary-header .secondary-links .user-profile-link {
+    padding: 0;
+    margin-left: 22px;
+  }
+  
+  .secondary-header .secondary-links .user-profile-link img {
+    width: 38px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .cabs{
+    color: #914a23;
+    font-weight: bolder;
+    font-size: 150%;
+    margin-top: 15%;
+
+  }
+  

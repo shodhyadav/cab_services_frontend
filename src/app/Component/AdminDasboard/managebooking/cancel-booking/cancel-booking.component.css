@@ -1,0 +1,14 @@
+.aa a {
+    letter-spacing: 0.2px;
+    cursor: pointer;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+  
+  .aa a.active {
+    color: #FFFFFF;
+  }
+  
+  .aa a:hover {
+    color: #8EC44A;
+  }

@@ -1,0 +1,14 @@
+<div class="text-center mt-5">
+   <h1 class="h11">Thank you for the Booking</h1>
+   <h1 class="mt-2">Your Booking Id is : {{id}}</h1>
+
+   <div class="mt-5 rec">
+      <a [routerLink]="'/user/receipt/'+id">Click Here</a>
+      <span> to generate Receipt</span>
+   </div>
+    <br>
+   <div class="mt-5 rec">
+      <span> Your feedback is important </span>
+      <a [routerLink]="'/user/feedback'">FEEDBACK </a>
+   </div>
+</div>

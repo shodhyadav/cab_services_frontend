@@ -1,0 +1,21 @@
+.contact{
+    background-image: url('../../../../assets/pic.jpg');
+    height: 86%;
+}
+.size{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mt{
+    margin-top: 10%;
+}
+.width{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mtt{
+    border-radius: 50px;
+}

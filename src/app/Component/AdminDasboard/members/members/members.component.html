@@ -1,0 +1,57 @@
+<div class="row mt-5">
+    <div class="col-md-12 mt-5">
+
+        <mat-card>
+
+            <h1 class="text-center" style="font-weight: bolder;">Admin List</h1>
+            
+            <div class="row mt-5" style="color:brown ;font-weight:bolder">
+                <div class="col-md-2 ">
+                   <h1>Username</h1>
+                </div>
+    
+                <div class="col-md-2 ">
+                    <h1>firstName</h1>
+                </div>
+    
+                <div class="col-md-2 ">
+                    <h1>lastName</h1>
+                </div>
+    
+                <div class="col-md-2">
+                    <h1>Email</h1>
+                </div>
+    
+                <div class="col-md-2 ">
+                    <h1>Phone</h1>
+                </div>
+    
+               </div>
+
+
+           <div *ngFor="let u of admins" class="row">
+            <div class="col-md-2">
+               <h4>{{u.username}}</h4>
+            </div>
+
+            <div class="col-md-2 ">
+                <h4>{{u.firstName}}</h4>
+            </div>
+
+            <div class="col-md-2 ">
+                <h4>{{u.lastName}}</h4>
+            </div>
+
+            <div class="col-md-2 ">
+                <h4>{{u.email}}</h4>
+            </div>
+
+            <div class="col-md-2 ">
+                <h4>{{u.phone}}</h4>
+            </div>
+           </div>
+        </mat-card>
+
+    </div>
+</div>
+

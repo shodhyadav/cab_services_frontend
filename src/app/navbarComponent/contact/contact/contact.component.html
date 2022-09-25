@@ -1,0 +1,48 @@
+<div class="container-fluid contact">
+    <div class="row">
+        <div class="col-md-12 mt">
+         <mat-card class="size ">
+
+            <div class="row">
+                <div class="col-md-6 text-center mt-5">
+                    <h1 style="color:brown; font-weight:bolder;">Contact Us</h1>
+                    <h4>Need to get in touch with us ? <br> Fill out this form</h4>
+
+                </div>
+                <div class="col-md-6">
+                    <form (ngSubmit)="onSubmit()">
+                        <mat-form-field class="width"appearance="fill">
+                            <mat-label>First Name</mat-label>
+                            <input  [(ngModel)]="contactus.firstName"
+                            name="firstName" matInput required />
+                        </mat-form-field>
+                        <mat-form-field class="width"  appearance="fill">
+                            <mat-label>Last Name</mat-label>
+                            <input   [(ngModel)]="contactus.lastName"
+                            name="lastName" matInput required />
+                        </mat-form-field>
+                        <br>
+                        <mat-form-field appearance="fill">
+                            <mat-label>Email</mat-label>
+                            <input  [(ngModel)]="contactus.email"
+                            name="email" matInput required />
+                        </mat-form-field>
+
+                        <mat-form-field appearance="fill">
+                            <mat-label>What can we help you with ??</mat-label>
+                            <textarea  [(ngModel)]="contactus.message" name="message"
+                            matInput placeholder="Its feel like ........"></textarea>
+                        </mat-form-field>
+                        <div class="mt-2">
+                            <button class="mtt"type="submit" mat-raised-button color="primary" >Submit</button>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </mat-card>
+        </div>
+</div>
+</div>

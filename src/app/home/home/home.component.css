@@ -1,0 +1,25 @@
+.h{
+    color: white;
+    background-image: url('../../../assets/pic.jpg');
+    height: 600px;
+}
+.h .h11{
+    font-weight: bold;
+    font-size:250%;
+}
+
+.h .h55{
+    font-weight: bold;
+    font-size:150%;
+}
+.card{
+    max-width: 350px;
+    margin-top: 3%;
+    margin-left: 10%;
+}
+.h22{
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: yellow;
+    border-radius: 50px;
+}
